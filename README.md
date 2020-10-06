@@ -1,6 +1,6 @@
 # **Todo List** #
 
-The *ToDo* *list* *application* :memo: is a simple web application to save the daily tasks.
+The *Todo* *list* *application* :memo: is a simple web application to save the daily tasks.
 
 ## *Features* ##
 * Add new task
