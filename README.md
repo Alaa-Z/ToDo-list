@@ -5,7 +5,7 @@ The *ToDo* *list* *application* :memo: is a simple web application to save the d
 ## *Features* ##
 * Add new task
 * Show task list 
-* Edit task(update, mark a done, remove)
+* Edit task(update, mark as done, remove)
 * Save and quit
 
 ## Language ## 
