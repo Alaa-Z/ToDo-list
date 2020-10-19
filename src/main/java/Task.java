@@ -1,35 +1,37 @@
-import java.util.Date;
+import java.time.DateTimeException;
+import java.time.LocalDate;
+
+
 
 public class Task {
-    /* add project catag and due date */
+
     private String title;
-    private Date date;
+    private LocalDate date;
     private boolean status;
 
-
-    // create a class constructor
-    public Task(String t){
+    public Task(String t,  LocalDate d){
         title = t;
+        date = d;
         status = false;
     }
 
-    public String getTitle(){
-        return title;
-    }
+    public String getTitle(){return title;}
 
-    public void setTitle(String t){
-        this.title = t;
-    }
+    public void setTitle(String t){this.title = t;}
 
-    public boolean getStatus(){
-        return status; 
-    }
+    public String getDate(){return date.toString();}
 
-    public void setStatus(){
-          status = true;
-    }
+    public void setDate(LocalDate d) throws DateTimeException {
+        //throw DataTimeException if the date is past
+        if(d.compareTo(LocalDate.now())>0){
+            throw new DateTimeException("You've entered invalid date");
+
+        }
+    } //{this.date=d;}
+
+    public boolean getStatus(){return status;}
+
+    public void markAsDone(){this.status = true;}
+
 
 }
-
-
-
